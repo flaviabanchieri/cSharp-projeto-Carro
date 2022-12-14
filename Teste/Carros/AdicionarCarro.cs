@@ -16,6 +16,8 @@ namespace Teste.Carros
             Carro newcarro = new Carro(serie);
             Console.WriteLine("Proprietário");
             newcarro.Proprietario = Console.ReadLine();
+            Console.WriteLine("Capacidade");
+            newcarro.Capacidade = int.Parse(Console.ReadLine());
             Carro.carroList.Add(newcarro.Serie);
             Carro.carros.Add(newcarro);
         }
